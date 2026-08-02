@@ -11,6 +11,6 @@
     <description lang="en_GB">Downloads and installs the FireBlazingTV addons, userdata (sources, favourites, skin/guisettings, profiles), background, and media directly from GitHub. Run this once after installing the FireBlazingTV Repository, then restart Kodi.</description>
     <platform>all</platform>
     <license>Public Domain</license>
-    <source>https://github.com/Visualfx100/FireBlazingTV</source>
+    <source>https://github.com/FireBlazingTV/FireBlazingTV</source>
   </extension>
 </addon>

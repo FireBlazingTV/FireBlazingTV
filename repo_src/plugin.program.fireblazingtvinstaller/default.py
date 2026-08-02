@@ -15,7 +15,7 @@ import xbmc
 import xbmcgui
 import xbmcvfs
 
-BASE_RAW = "https://raw.githubusercontent.com/Visualfx100/FireBlazingTV/main"
+BASE_RAW = "https://raw.githubusercontent.com/FireBlazingTV/FireBlazingTV/main"
 HOME = xbmcvfs.translatePath("special://home/")
 TEMP = xbmcvfs.translatePath("special://temp/")
 ADDON_NAME = "FireBlazingTV Installer"

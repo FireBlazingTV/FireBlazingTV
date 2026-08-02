@@ -1,6 +1,6 @@
-# Kodi Build 26
+# FireBlazingTV
 
-A shareable package of the "Kodi Build 26" setup — includes the full addon collection, userdata (skin settings, sources, favourites, profiles), background media, and additional media assets.
+A shareable package of the "FireBlazingTV" Kodi build — includes the full addon collection, userdata (skin settings, sources, favourites, profiles), background media, and additional media assets.
 
 ## Easiest install: through Kodi's built-in installer
 
@@ -9,15 +9,15 @@ This repo includes a real Kodi repository + installer add-on, so you never have 
 1. **Enable unknown sources:** Settings → System → Add-ons → turn on "Unknown sources".
 2. **Add this repo as a file source:**
    - Settings → File manager → Add source → type this exact path:
-     `https://raw.githubusercontent.com/Visualfx100/kodi-build-26/main/repo/zips/`
-   - Name it e.g. `KodiBuild26`.
+     `https://raw.githubusercontent.com/Visualfx100/FireBlazingTV/main/repo/zips/`
+   - Name it e.g. `FireBlazingTV`.
 3. **Install the repository via the file installer:**
-   - Add-ons → the box icon (top-left) → Install from zip file → `KodiBuild26` → `repository.kodibuild26` → `repository.kodibuild26-1.0.0.zip`.
+   - Add-ons → the box icon (top-left) → Install from zip file → `FireBlazingTV` → `repository.fireblazingtv` → `repository.fireblazingtv-1.0.0.zip`.
    - Wait for the "Add-on enabled" notification.
 4. **Install the build installer from the repository:**
-   - Add-ons → the box icon → Install from repository → `Kodi Build 26 Repository` → Program add-ons → `Kodi Build 26 Installer` → Install.
+   - Add-ons → the box icon → Install from repository → `FireBlazingTV Repository` → Program add-ons → `FireBlazingTV Installer` → Install.
 5. **Run the installer:**
-   - Add-ons → Program add-ons → `Kodi Build 26 Installer` → run it.
+   - Add-ons → Program add-ons → `FireBlazingTV Installer` → run it.
    - It downloads and installs the addon pack, userdata (sources/favourites/skin settings), Background, and media straight into your Kodi folder, with a progress bar.
 6. **Restart Kodi** when it tells you installation is complete.
 

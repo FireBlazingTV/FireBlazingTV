@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Kodi Build 26 Installer
+FireBlazingTV Installer
 Downloads the split build archives from GitHub, reassembles them, and
 extracts addons / userdata / Background / media directly into the Kodi
 home folder (special://home/).
@@ -15,14 +15,14 @@ import xbmc
 import xbmcgui
 import xbmcvfs
 
-BASE_RAW = "https://raw.githubusercontent.com/Visualfx100/kodi-build-26/main"
+BASE_RAW = "https://raw.githubusercontent.com/Visualfx100/FireBlazingTV/main"
 HOME = xbmcvfs.translatePath("special://home/")
 TEMP = xbmcvfs.translatePath("special://temp/")
-ADDON_NAME = "Kodi Build 26 Installer"
+ADDON_NAME = "FireBlazingTV Installer"
 
 
 def log(msg):
-    xbmc.log("[kodibuild26installer] {}".format(msg), xbmc.LOGINFO)
+    xbmc.log("[fireblazingtvinstaller] {}".format(msg), xbmc.LOGINFO)
 
 
 def download(url, dest_path, progress=None, label=""):
@@ -70,14 +70,14 @@ def main():
     dialog = xbmcgui.Dialog()
     proceed = dialog.yesno(
         ADDON_NAME,
-        "This will download and install the Kodi Build 26 addon pack.\n\n"
+        "This will download and install the FireBlazingTV addon pack.\n\n"
         "It will overwrite matching files in your addons, userdata, Background, "
         "and media folders. Continue?",
     )
     if not proceed:
         return
 
-    work_dir = os.path.join(TEMP, "kodibuild26_install")
+    work_dir = os.path.join(TEMP, "fireblazingtv_install")
     if os.path.isdir(work_dir):
         shutil.rmtree(work_dir, ignore_errors=True)
     os.makedirs(work_dir)

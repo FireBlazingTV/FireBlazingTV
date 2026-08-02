@@ -12,8 +12,8 @@ REPO = os.path.join(ROOT, "repo")
 ZIPS = os.path.join(REPO, "zips")
 
 ADDONS = [
-    ("repository.kodibuild26", "1.0.0"),
-    ("plugin.program.kodibuild26installer", "1.0.0"),
+    ("repository.fireblazingtv", "1.0.0"),
+    ("plugin.program.fireblazingtvinstaller", "1.0.0"),
 ]
 
 

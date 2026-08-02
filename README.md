@@ -9,8 +9,9 @@ This repo includes a real Kodi repository + installer add-on, so you never have 
 1. **Enable unknown sources:** Settings → System → Add-ons → turn on "Unknown sources".
 2. **Add this repo as a file source:**
    - Settings → File manager → Add source → type this exact path:
-     `https://raw.githubusercontent.com/FireBlazingTV/FireBlazingTV/main/repo/zips/`
+     `https://fireblazingtv.github.io/FireBlazingTV/repo/zips/`
    - Name it e.g. `FireBlazingTV`.
+   - (This uses GitHub Pages rather than raw.githubusercontent.com, because raw GitHub URLs can't be browsed as folders — GitHub Pages can.)
 3. **Install the repository via the file installer:**
    - Add-ons → the box icon (top-left) → Install from zip file → `FireBlazingTV` → `repository.fireblazingtv` → `repository.fireblazingtv-1.0.0.zip`.
    - Wait for the "Add-on enabled" notification.

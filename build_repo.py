@@ -17,6 +17,21 @@ ADDONS = [
 ]
 
 
+def write_index_html(dir_path, filenames):
+    """Writes a plain HTML directory listing so Kodi's HTTP file browser
+    (which needs <a href> links, not GitHub's normal 404-on-folder behavior)
+    can list files when this folder is served as a static site (GitHub Pages)."""
+    links = "\n".join(
+        '<li><a href="{name}">{name}</a></li>'.format(name=name) for name in filenames
+    )
+    html = (
+        "<!DOCTYPE html><html><head><meta charset=\"utf-8\"></head><body>\n"
+        "<ul>\n{links}\n</ul>\n</body></html>\n"
+    ).format(links=links)
+    with open(os.path.join(dir_path, "index.html"), "w") as f:
+        f.write(html)
+
+
 def zip_addon(addon_id, version):
     src_dir = os.path.join(SRC, addon_id)
     out_dir = os.path.join(ZIPS, addon_id)
@@ -36,6 +51,7 @@ def zip_addon(addon_id, version):
         src_extra = os.path.join(src_dir, extra)
         if os.path.exists(src_extra):
             shutil.copy2(src_extra, os.path.join(out_dir, extra))
+    write_index_html(out_dir, [zip_name, "addon.xml", "icon.png"])
     print("Packaged", zip_path)
     return zip_path
 
@@ -72,6 +88,11 @@ def main():
         zip_addon(addon_id, version)
     addons_xml_path = build_addons_xml()
     write_md5(addons_xml_path)
+    # Top-level zips/ index so Kodi can browse into each addon folder
+    write_index_html(ZIPS, [addon_id + "/" for addon_id, _ in ADDONS])
+    # .nojekyll so GitHub Pages serves these files/folders as-is
+    with open(os.path.join(ROOT, ".nojekyll"), "w") as f:
+        f.write("")
 
 
 if __name__ == "__main__":

@@ -2,6 +2,31 @@
 
 A shareable package of the "Kodi Build 26" setup — includes the full addon collection, userdata (skin settings, sources, favourites, profiles), background media, and additional media assets.
 
+## Easiest install: through Kodi's built-in installer
+
+This repo includes a real Kodi repository + installer add-on, so you never have to touch files manually. In Kodi:
+
+1. **Enable unknown sources:** Settings → System → Add-ons → turn on "Unknown sources".
+2. **Add this repo as a file source:**
+   - Settings → File manager → Add source → type this exact path:
+     `https://raw.githubusercontent.com/Visualfx100/kodi-build-26/main/repo/zips/`
+   - Name it e.g. `KodiBuild26`.
+3. **Install the repository via the file installer:**
+   - Add-ons → the box icon (top-left) → Install from zip file → `KodiBuild26` → `repository.kodibuild26` → `repository.kodibuild26-1.0.0.zip`.
+   - Wait for the "Add-on enabled" notification.
+4. **Install the build installer from the repository:**
+   - Add-ons → the box icon → Install from repository → `Kodi Build 26 Repository` → Program add-ons → `Kodi Build 26 Installer` → Install.
+5. **Run the installer:**
+   - Add-ons → Program add-ons → `Kodi Build 26 Installer` → run it.
+   - It downloads and installs the addon pack, userdata (sources/favourites/skin settings), Background, and media straight into your Kodi folder, with a progress bar.
+6. **Restart Kodi** when it tells you installation is complete.
+
+That's it — no manual file extraction, no navigating hidden folders. This works the same way on Windows, macOS, Linux, Android, and Fire TV Stick, since it all happens inside the Kodi UI.
+
+## Manual install (alternative)
+
+If you'd rather install by hand (or the file installer isn't available on your device), you can still download and extract the zips yourself:
+
 ## What's in this repo
 
 Because GitHub blocks individual files over 100 MB, the two largest packages (`addons.zip` and `userdata.zip`) are split into smaller chunks that need to be joined back together before use. `Background.zip` and `media.zip` are small enough to use as-is.

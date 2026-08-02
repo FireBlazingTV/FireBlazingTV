@@ -1,0 +1,6 @@
+{
+  "addons_parts": ["addons.zip.00.part", "addons.zip.01.part"],
+  "userdata_parts": ["userdata.zip.00.part", "userdata.zip.01.part"],
+  "background": "Background.zip",
+  "media": "media.zip"
+}

@@ -78,10 +78,11 @@ To confirm nothing got corrupted during download/reassembly, compare checksums:
 | File | SHA-256 |
 |---|---|
 | `addons.zip` | `6f7e9d664594863e6acafb722774dbff5c9bb0b32460c3dae7113898aa1301db` |
-| `userdata.zip` | `0a193c42cb93cba28dafd8841a6e5c5bf06b7cc6c203089370864c8dea766939` |
+| `userdata.zip` | `0afe529d2a11079750c26bb7436426476b9452c9281d1a7cb2d0eac3df1bc39d` |
 
 ## Notes
 
+- Custom background/thumbnail image paths in the skin settings were rewritten from an absolute Mac file path to Kodi's portable `special://home/...` path, so the bundled background image now resolves correctly on any device/OS.
 - This is a personal build snapshot — some third-party addons/scrapers may need re-configuring depending on your region or may stop working over time as their sources change.
 - If antivirus/browser flags the zip as suspicious, this is common for Kodi build files due to the third-party addon scrapers included — the files are as extracted directly from a working Kodi installation.
 - Back up your existing Kodi userdata/addons folders before overwriting if you want to preserve your current setup.

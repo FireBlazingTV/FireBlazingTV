@@ -77,12 +77,13 @@ To confirm nothing got corrupted during download/reassembly, compare checksums:
 
 | File | SHA-256 |
 |---|---|
-| `addons.zip` | `6f7e9d664594863e6acafb722774dbff5c9bb0b32460c3dae7113898aa1301db` |
-| `userdata.zip` | `0afe529d2a11079750c26bb7436426476b9452c9281d1a7cb2d0eac3df1bc39d` |
+| `addons.zip` | `42f21f5b99f56c5cf3ddc522581e6842b24ac0c15e9d26a9c828a149c097ce69` |
+| `userdata.zip` | `fed1cf1943eb7bce5735fbfe580d300aba1ab4ad937e83d2e0f793362b2ddbd7` |
 
 ## Notes
 
-- Custom background/thumbnail image paths in the skin settings were rewritten from an absolute Mac file path to Kodi's portable `special://home/...` path, so the bundled background image now resolves correctly on any device/OS.
+- Custom background/thumbnail image paths in the skin settings and main menu icons were rewritten from absolute Mac file paths to Kodi's portable `special://home/...` paths, so they resolve correctly on any device/OS.
+- The skin (Aeon Nox Silvo) was patched so the Home screen background always uses your chosen custom background image directly, instead of depending on an online fanart-grabbing service that can leave the Home screen black on a fresh install with an empty library.
 - This is a personal build snapshot — some third-party addons/scrapers may need re-configuring depending on your region or may stop working over time as their sources change.
 - If antivirus/browser flags the zip as suspicious, this is common for Kodi build files due to the third-party addon scrapers included — the files are as extracted directly from a working Kodi installation.
 - Back up your existing Kodi userdata/addons folders before overwriting if you want to preserve your current setup.
